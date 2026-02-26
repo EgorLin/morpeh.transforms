@@ -18,6 +18,14 @@
                 entity.SetComponent(new ParentChangedMarker());
             }
         }
+        
+        public static void RemoveParent(this Entity entity) 
+        { 
+            if (entity.Has<Parent>())
+            {
+                entity.RemoveComponent<Parent>();
+            }
+        }
 #pragma warning restore 0618
     }
 }
