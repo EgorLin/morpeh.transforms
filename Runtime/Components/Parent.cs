@@ -1,4 +1,5 @@
 ﻿using System;
+using Scellecs.Morpeh.Workaround;
 
 namespace Scellecs.Morpeh.Transforms
 {
@@ -15,7 +16,7 @@ namespace Scellecs.Morpeh.Transforms
     /// </remarks>
     /// <seealso cref="Child"/>
     [Serializable]
-    public struct Parent : IComponent
+    public struct Parent : ICleanupComponent
     {
         /// <summary>
         /// The parent entity.
